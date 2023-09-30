@@ -1,2 +1,3 @@
 # PhotographerWebsite
-sitio web para un fotógrafo
+
+web site for a photographer
