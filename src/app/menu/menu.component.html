@@ -1,0 +1,52 @@
+<header class="relative" (scroll)="scrollMenu()">
+  <div class="flex justify-evenly items-center h-16 bg-white">
+    <div class="w-[75px]">
+      <img
+        class="w-[75px] m-auto"
+        src="../assets/icon/Pg 1_Cel_Logo.svg"
+        alt="Logo 1"
+      />
+    </div>
+    <div class="w-[75px]">
+      <img
+        class="w-[72px] m-auto"
+        src="../assets/icon/Icono Logo.svg"
+        alt="Logo 2"
+      />
+    </div>
+    <div class="w-[75px]">
+      <img
+        class="w-[22px] m-auto"
+        src="../assets/icon/Recurso_3 barras Menu.svg"
+        alt="Logo Menu"
+        (click)="showMenu()"
+      />
+    </div>
+  </div>
+  <div
+    class="absolute top-0 left-0 right-0 flex justify-evenly items-center h-16 bg-white"
+    *ngIf="isShowMenu"
+  >
+    <button
+      class="bg-[#F6F5F1] w-24 text-center rounded-full"
+      type="button"
+      (click)="btn1()"
+    >
+      Home
+    </button>
+    <button
+      class="bg-[#F6F5F1] w-24 text-center rounded-full"
+      type="button"
+      (click)="btn2()"
+    >
+      Portafolio
+    </button>
+    <button
+      class="bg-[#F6F5F1] w-24 text-center rounded-full"
+      type="button"
+      (click)="btn3()"
+    >
+      Mis viajes
+    </button>
+  </div>
+</header>
